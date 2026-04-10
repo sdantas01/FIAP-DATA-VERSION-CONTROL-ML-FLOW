@@ -26,12 +26,12 @@ def train_model():
     y = df['target']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
     
-    print(" Treinando modelo...")
+    print("🤖 Treinando modelo...")
     model = RandomForestClassifier(n_estimators=100, max_depth=10)
     model.fit(X_train, y_train)
     
     acc = accuracy_score(y_test, model.predict(X_test))
-    print(f" Acurácia: {acc:.4f}")
+    print(f"✅ Acurácia: {acc:.4f}")
     
     os.makedirs('models', exist_ok=True)
     with open('models/model_v1.pkl', 'wb') as f:
