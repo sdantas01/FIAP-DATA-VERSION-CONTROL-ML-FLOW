@@ -17,7 +17,7 @@ def create_dataset():
     return df
 
 def train_model():
-    print(" Criando dataset...")
+    print("📊 Criando dataset...")
     df = create_dataset()
     os.makedirs('data', exist_ok=True)
     df.to_csv('data/train_data.csv', index=False)
