@@ -1,5 +1,5 @@
 [core]
     no_scm = True
-    remote = local_gdrive
-['remote "local_gdrive"']
-    url = /content/drive/MyDrive/dvc_storage_fiap
+    remote = local_storage
+['remote "local_storage"']
+    url = /content/drive/MyDrive/dvc_remote_storage
